@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout1}">
 <head>
     <meta charset="UTF-8">
     <title>Products</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 <body>
-<div class="p-3">
+<div class="p-3" layout:fragment="content">
+    <div class="p-3">
+        <a class="btn btn-primary" th:href="@{/newProduct}">New Product</a>
+
+    </div>
     <table class="table table-striped">
         <thead>
             <th>ID</th>
