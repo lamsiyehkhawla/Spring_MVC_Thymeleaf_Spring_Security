@@ -26,20 +26,20 @@ Here are some example screenshots of the app:
 
 ### Login page
 
-![Login page] <img src="/images/login.png">
+ <img src="/images/login.png">
 
 ### Product list with search bar
 
-![Product list]<img src="/images/user_view.png">()
+<img src="/images/user_view.png">()
 
 
 **Admin view**
 ### Product List
-![Product list] <img src="/images/admin_view.png">()
+ <img src="/images/admin_view.png">()
 
 ### Add/Edit Product form
-![AddProduct]<img src="/images/add_product.png">
-![AddProduct]<img src="images/edit_product.pn">
+<img src="/images/add_product.png">
+<img src="images/edit_product.pn">
 
 
 ---
