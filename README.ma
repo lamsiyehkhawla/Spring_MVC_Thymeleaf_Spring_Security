@@ -34,19 +34,17 @@ It supports product listing, creation, deletion, updating, and keyword-based sea
 Here are some example screenshots of the app:
 
 ### Login page
- <img src="/images/login.png">
+![Login page](images/login.png)
 
 ### Product list with search bar
+![User view](images/user_view.png)
 
-<img src="/images/user_view.png">
-
-**Admin view**
-### Product List
- <img src="/images/admin_view.png">
+### Admin view - Product List
+![Admin view](images/admin_view.png)
 
 ### Add/Edit Product form
-<img src="/images/add_product.png">
-<img src="images/edit_product.pn">
+![Add product](images/add_product.png)
+![Edit product](images/edit_product.png)
 
 
 ---
