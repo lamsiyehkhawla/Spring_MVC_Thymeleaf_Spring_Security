@@ -18,15 +18,6 @@ It supports product listing, creation, deletion, updating, and keyword-based sea
 - 🎨 Responsive UI using Bootstrap 5
 - 🛡 CSRF protection and secure session management
 
-## 🛠 Technologies Used
--Java 17+
--Spring Boot 3
--Spring MVC
--Spring Security
--Thymeleaf
--Bootstrap 5
--Hibernate / JPA
--H2
 ---
 
 ## 📸 Screenshots
@@ -34,15 +25,17 @@ It supports product listing, creation, deletion, updating, and keyword-based sea
 Here are some example screenshots of the app:
 
 ### Login page
+
  <img src="/images/login.png">
 
 ### Product list with search bar
 
-<img src="/images/user_view.png">
+<img src="/images/user_view.png">()
+
 
 **Admin view**
 ### Product List
- <img src="/images/admin_view.png">
+ <img src="/images/admin_view.png">()
 
 ### Add/Edit Product form
 <img src="/images/add_product.png">
@@ -73,22 +66,3 @@ src
         │   ├── new-product.html
         │   └── layout1.html
         └── application.properties
-
-## 📚 Learning Goals
--Build secure web applications with Spring Boot and Spring Security
-
--Use Thymeleaf template engine with reusable layout fragments
-
--Implement form handling, validation, and model binding in Spring MVC
-
--Create responsive and user-friendly interfaces using Bootstrap 5
-
--Apply role-based authorization for resource access control
-
-## 👤 Author
-Made with ❤️ by Lamsiyeh Khawla
-🔗 www.linkedin.com/in/khawla-lamsiyeh
-📁 GitHub: lamsiyehkhawla
-
-## 📌 License
-This project is open-source and free for educational purposes.
