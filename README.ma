@@ -34,7 +34,7 @@ It supports product listing, creation, deletion, updating, and keyword-based sea
 Here are some example screenshots of the app:
 
 ### Login page
-![Login page](images/login.png)
+<img src="imagies/login.png">
 
 ### Product list with search bar
 ![User view](images/user_view.png)
