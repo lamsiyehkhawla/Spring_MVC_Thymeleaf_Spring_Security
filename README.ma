@@ -1,62 +1,68 @@
-# bdccensetspringmvc
+# 🛍️ Spring Boot Product Management System
 
-A simple Spring Boot MVC application for managing products. The application uses Thymeleaf for the view layer and initializes with some sample products. Users can view the product list, add new products, and delete existing ones.
+A web-based product management application built with **Spring Boot**, **Thymeleaf**, and **Spring Security**.
+It supports product listing, creation, deletion, updating, and keyword-based searching, along with secure login/logout with role-based access.
 
-## Features
+---
 
-- View all products
-- Add a new product
-- Delete a product
-- MVC architecture with Thymeleaf templates
-- In-memory product initialization on startup
+## ✨ Features
 
-## Technologies Used
+- ✅ User authentication with Spring Security
+- 🧑‍💼 Role-based access (USER / ADMIN)
+- 📦 Product CRUD operations:
+  - Create
+  - Read (list & search)
+  - Update
+  - Delete
+- 🔍 Search products by name
+- 🎨 Responsive UI using Bootstrap 5
+- 🛡 CSRF protection and secure session management
 
-- Java 17+
-- Spring Boot
-- Spring MVC
-- Thymeleaf
-- JPA (with in-memory H2 or another configured database)
-- Bootstrap 4 for styling
+---
 
-## Project Structure
+## 📸 Screenshots
 
-enset_bdcc.bdccensetspringmvc
-│
-├── BdccEnsetSpringMvcApplication.java # Main Spring Boot application
-├── entities
-│ └── Product.java # Product entity with name, price, quantity
-├── repository
-│ └── ProductRepository.java # Extends JpaRepository for CRUD operations
-├── web
-│ └── ProductController.java # Handles HTTP routes for product operations
-└── resources
-└── templates/
-├── products.html # Main product list page
-├── new-product.html # Form to add new products
-└── layout1.html # Layout template
+Here are some example screenshots of the app:
 
-## Getting Started
+### Login page
 
-### Prerequisites
+![Login page](images/login.png)
 
-- Java JDK 17 or later
-- Maven or Gradle
-- IDE (IntelliJ, Eclipse, VS Code)
+### Product list with search bar
 
-### Running the Application
+![Product list](images/user_view.png)
 
-1. Clone the repository:
+
+**Admin view**
+### Product List
+![Product list](images/admin_view.png)
+
+### Add/Edit Product form
+![AddProduct](images/add_product.png)
+![AddProduct](images/edit_product.png)
+
+
+---
+
+## 🏗 Project Structure
 
 ```bash
-git clone https://github.com/your-username/bdccensetspringmvc.git
-cd bdccensetspringmvc
-
-### Available Routes
-| URL            | Description                   |
-| -------------- | ----------------------------- |
-| `/`            | Redirects to `/index`         |
-| `/index`       | Displays all products         |
-| `/newProduct`  | Form to create a new product  |
-| `/saveProduct` | Saves a new product (POST)    |
-| `/delete?id=X` | Deletes the product with ID=X |
+src
+└── main
+    ├── java
+    │   └── enset_bdcc.bdccensetspringmvc
+    │       ├── entities
+    │       │   └── Product.java
+    │       ├── repository
+    │       │   └── ProductRepository.java
+    │       ├── security
+    │       │   └── SecurityConfig.java
+    │       └── web
+    │           └── ProductController.java
+    └── resources
+        ├── templates
+        │   ├── login.html
+        │   ├── products.html
+        │   ├── new-product.html
+        │   └── layout1.html
+        └── application.properties

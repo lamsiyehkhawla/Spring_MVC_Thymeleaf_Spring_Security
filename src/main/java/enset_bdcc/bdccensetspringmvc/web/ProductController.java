@@ -55,9 +55,36 @@ public class ProductController {
         return "/notAuthorized";
     }
 
+    @GetMapping("/login")
+    public String login() {
+        return "login"; //
+    }
+
     @GetMapping("/logout")
     public String logout(HttpSession session){
         session.invalidate();
         return "login";
     }
+    @GetMapping("/user/search")
+    public String searchProducts(@RequestParam(name = "keyword", required = false) String keyword, Model model) {
+        List<Product> products;
+        if (keyword != null && !keyword.isEmpty()) {
+            products = productRepository.findByNameContainsIgnoreCase(keyword);
+        } else {
+            products = productRepository.findAll();
+        }
+        model.addAttribute("productList", products);
+        model.addAttribute("keyword", keyword);
+        return "products";
+    }
+
+    @GetMapping("/admin/editProduct")
+    public String editProduct(@RequestParam("id") Long id, Model model) {
+        Product product = productRepository.findById(id).orElse(null);
+        if (product == null) return "redirect:/user/index"; // or error page
+        model.addAttribute("product", product);
+        return "new-product"; // reuse form
+    }
+
+
 }
