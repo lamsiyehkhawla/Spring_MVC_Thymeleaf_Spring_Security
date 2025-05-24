@@ -46,7 +46,6 @@ Here are some example screenshots of the app:
 ![Add product](images/add_product.png)
 ![Edit product](images/edit_product.png)
 
-
 ---
 
 ## 🏗 Project Structure
