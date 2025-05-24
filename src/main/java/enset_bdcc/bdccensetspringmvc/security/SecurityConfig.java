@@ -36,9 +36,10 @@ public InMemoryUserDetailsManager inMemoryUserDetailsManager() {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http
                 .formLogin(Customizer.withDefaults())
-                .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/index/**").hasRole("USER")
-                        .requestMatchers("/save/**", "/delete/**").hasRole("ADMIN")
+                .authorizeHttpRequests(ar ->ar
+                        .requestMatchers("/user/**").hasRole("USER")
+                        .requestMatchers("/admin/**").hasRole("ADMIN")
+                        .requestMatchers("/public/**").permitAll()
                         .anyRequest().authenticated()
                 )
                 .build();
